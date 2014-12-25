@@ -9,7 +9,7 @@ module Sass::Script::Functions
   # path  - Path to the SVG file, relative to the Sass compiler entry point.
   # color - Fill color to add to (or replace) on all <path> elements (optional).
   #
-  # Returns a Sass string
+  # Returns a Sass string of the SVG data URI.
 
   def inline_svg_image(path, color = nil)
     assert_type path, :String
@@ -31,7 +31,7 @@ module Sass::Script::Functions
   # path  - Path to the SVG file, relative to the Sass compiler entry point.
   # color - Fill color to add to (or replace) on all <path> elements (optional).
   #
-  # Returns a Sass string
+  # Returns a Sass string of the raw SVG markup.
 
   def raw_svg_image(path, color = nil)
     assert_type path, :String
