@@ -50,6 +50,10 @@ module Sass::Script::Functions
   def _read_svg_file_and_recolor_paths(path, color)
     svg = _read_file(path.value).strip
 
+    # This will work if no paths have fills, or all paths have fills,
+    # but may not work as expected for svgs that have mixed paths with and
+    # without fills.
+
     unless color.nil?
       if svg.include? 'fill='
         svg.gsub!(/fill=\"[^\"]*\"/, "fill=\"#{color}\"")
