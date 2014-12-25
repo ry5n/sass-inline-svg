@@ -1,0 +1,25 @@
+{
+  "name": "sass-inline-svg",
+  "version": "0.0.0",
+  "authors": [
+    "Ryan Frederick <ryan@ryanfrederick.com>"
+  ],
+  "description": "Inline an SVG as a CSS data URI suitable for background-image. Allows recoloring paths.",
+  "main": "sass-inline-svg.rb",
+  "keywords": [
+    "Sass",
+    "SVG",
+    "icon",
+    "inline",
+    "data URI"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
