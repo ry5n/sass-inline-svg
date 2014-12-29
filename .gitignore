@@ -1,2 +1,5 @@
 .sass-cache
-test/*.css
+node_modules
+bower_components
+**/*.css
+tmp

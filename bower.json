@@ -1,10 +1,10 @@
 {
   "name": "sass-inline-svg",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "authors": [
     "Ryan Frederick <ryan@ryanfrederick.com>"
   ],
-  "description": "Inline an SVG as a CSS data URI suitable for background-image. Allows recoloring paths.",
+  "description": "Inline an SVG as a CSS data URI. Allows recoloring paths.",
   "main": "sass-inline-svg.rb",
   "keywords": [
     "Sass",
@@ -20,6 +20,8 @@
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "Gruntfile.js",
+    "package.json"
   ]
 }

@@ -1,0 +1,38 @@
+@import 'variables';
+
+html {
+    font-family: sans-serif;
+}
+
+body {
+    max-width: 30em;
+    margin: 0 auto;
+    padding: 1.5em;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 0.5em 0;
+}
+
+tr > th:first-child {
+    text-align: right;
+    font-weight: normal;
+    padding-right: 1em;
+}
+
+.icon {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+}
+
+@import 'no-fill';
+@import 'add-fill';
+@import 'with-fill';
+@import 'replace-fill';

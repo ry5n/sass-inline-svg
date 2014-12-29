@@ -1,0 +1,7 @@
+@import 'variables';
+
+.icon--no-fill {
+    content: raw-svg('#{$fixture-path}/svg/no-fill.svg');
+    background-color: hsl(200, 90%, 90%);
+    background-image: inline-svg('#{$fixture-path}/svg/no-fill.svg');
+}

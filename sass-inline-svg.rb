@@ -3,15 +3,15 @@ require 'cgi'
 
 module Sass::Script::Functions
 
-  # Public: Create a data URI from an SVG file, optionally re-coloring
-  # path fills. Includes the CSS url() wrapper.
+  # Public: Create a CSS data URI from an SVG file, optionally re-coloring
+  # path fills. Includes the CSS `url()` wrapper.
   #
   # path  - Path to the SVG file, relative to the Sass compiler entry point.
   # color - Fill color to add to (or replace) on all <path> elements (optional).
   #
-  # Returns a Sass string of the SVG data URI.
+  # Returns (Sass String) The SVG data URI wrapped in the CSS `url()` wrapper.
 
-  def inline_svg_image(path, color = nil)
+  def inline_svg(path, color = nil)
     assert_type path, :String
     assert_type color, :Color unless color.nil?
 
@@ -22,7 +22,7 @@ module Sass::Script::Functions
 
     Sass::Script::String.new(data_uri)
   end
-  declare :inline_svg_image, [:path, :color]
+  declare :inline_svg, [:path, :color]
 
 
   # Public: Create a Sass string from an SVG file, optionally re-coloring
@@ -31,9 +31,9 @@ module Sass::Script::Functions
   # path  - Path to the SVG file, relative to the Sass compiler entry point.
   # color - Fill color to add to (or replace) on all <path> elements (optional).
   #
-  # Returns a Sass string of the raw SVG markup.
+  # Returns (Sass String) of the raw SVG markup.
 
-  def raw_svg_image(path, color = nil)
+  def raw_svg(path, color = nil)
     assert_type path, :String
     assert_type color, :Color unless color.nil?
 
@@ -41,7 +41,7 @@ module Sass::Script::Functions
 
     Sass::Script::String.new("'#{svg}'")
   end
-  declare :raw_svg_image, [:path, :color]
+  declare :raw_svg, [:path, :color]
 
 
   private
