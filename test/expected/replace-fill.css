@@ -1,0 +1,5 @@
+.icon--replace-fill {
+  content: '<svg xmlns="http://www.w3.org/2000/svg"> <path fill="#fff" d="M16.596 8.58l-4.59 4.592-4.592-4.59L6 9.994 12.005 16l6.005-6.005z"/> </svg>';
+  background-color: #0a85c2;
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M16.596%208.58l-4.59%204.592-4.592-4.59L6%209.994%2012.005%2016l6.005-6.005z%22%2F%3E%0A%3C%2Fsvg%3E');
+}
